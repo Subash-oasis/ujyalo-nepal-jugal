@@ -1,108 +1,524 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ne">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>उज्यालो नेपाल पार्टी — जुगल गाउँपालिका सञ्चार समिति</title>
-<meta name="description" content="उज्यालो नेपाल पार्टी जुगल गाउँपालिका सञ्चार समितिको सूचना तथा सञ्चार वेबसाइट।">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>उज्यालो नेपाल पार्टी</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
+    line-height:1.7;
+    color:#222;
+    background:#f5f7fb;
+}
+
+/* NAVBAR */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,.15);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#0645ad;
+}
+
+nav{
+    display:flex;
+    gap:22px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#0645ad;
+}
+
+/* HERO */
+.hero{
+    width:100%;
+    background:#000;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+}
+
+/* WELCOME */
+.welcome{
+    text-align:center;
+    background:white;
+    padding:65px 20px;
+}
+
+.welcome h1{
+    color:#0645ad;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.welcome p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#0645ad;
+    color:white;
+    text-decoration:none;
+    border-radius:7px;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+.section{
+    max-width:1150px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#0645ad;
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#0645ad;
+    margin-bottom:10px;
+}
+
+/* AGENDA */
+.agenda{
+    background:#eef5ff;
+    max-width:none;
+    padding-left:7%;
+    padding-right:7%;
+}
+
+/* ACTIVITIES */
+.activity{
+    background:white;
+    margin:18px auto;
+    padding:25px;
+    max-width:850px;
+    border-left:5px solid #0645ad;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border-radius:5px;
+}
+
+/* EVENTS */
+.events{
+    background:#f8f9fc;
+}
+
+.event{
+    background:white;
+    max-width:850px;
+    margin:15px auto;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-box{
+    height:180px;
+    background:#e9edf5;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#555;
+    font-weight:bold;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    padding:70px 20px;
+    background:#063b91;
+    color:white;
+}
+
+.contact h2{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.contact p{
+    margin:8px;
+}
+
+.social{
+    margin-top:25px;
+}
+
+.social a{
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    margin:5px 10px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    background:#061d45;
+    color:white;
+    padding:30px 15px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav{
+        gap:10px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .welcome h1{
+        font-size:27px;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .hero img{
+        width:100%;
+    }
+}
+</style>
 </head>
+
 <body>
-<div class="topbar">जुगल गाउँपालिका, सिन्धुपाल्चोक &nbsp; | &nbsp; सत्य सूचना, जनताको आवाज</div>
 
 <header>
-  <div class="brand">
-    <div class="logo">उज्यालो<br><span>नेपाल</span></div>
-    <div>
-      <h1>उज्यालो नेपाल पार्टी</h1>
-      <p>जुगल गाउँपालिका सञ्चार समिति</p>
-    </div>
-  </div>
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
-</header>
+<div class="navbar">
 
-<nav id="nav">
-  <a href="#home">गृहपृष्ठ</a>
-  <a href="#about">हाम्रो बारेमा</a>
-  <a href="#news">समाचार</a>
-  <a href="#press">प्रेस विज्ञप्ति</a>
-  <a href="#gallery">फोटो ग्यालरी</a>
-  <a href="#committee">कार्यसमिति</a>
-  <a href="#events">कार्यक्रम</a>
-  <a href="#contact">सम्पर्क</a>
+<div class="logo">
+उज्यालो नेपाल पार्टी
+</div>
+
+<nav>
+<a href="#home">गृहपृष्ठ</a>
+<a href="#about">पार्टी परिचय</a>
+<a href="#agenda">एजेन्डा</a>
+<a href="#activities">गतिविधि</a>
+<a href="#events">कार्यक्रम</a>
+<a href="#gallery">ग्यालरी</a>
+<a href="#contact">सम्पर्क</a>
 </nav>
 
-<main id="home">
-  <section class="main-banner">
-    <img src="banner.png" alt="उज्यालो नेपाल पार्टी जुगल गाउँपालिका सञ्चार समिति">
-  </section>
-<section class="hero">
-  <div>
-    <span class="badge">मुख्य सूचना</span>
-    <h2>जुगल गाउँपालिकाका गतिविधि र पार्टीसम्बन्धी सूचनाहरू</h2>
-    <p>स्थानीय गतिविधि, कार्यक्रम, प्रेस विज्ञप्ति तथा सञ्चार सामग्री एकै ठाउँमा।</p>
-    <a class="btn" href="#news">समाचार हेर्नुहोस् →</a>
-  </div>
-</section>
-
-<section id="news">
-<h2 class="section-title">ताजा समाचार</h2>
-<div class="grid">
-  <article><div class="placeholder">समाचार फोटो</div><h3>जुगल गाउँपालिकामा स्थानीय भेटघाट तथा अन्तरक्रिया कार्यक्रम</h3><small>मिति: यहाँ मिति राख्नुहोस्</small><p>यहाँ समाचारको छोटो विवरण लेख्नुहोस्।</p></article>
-  <article><div class="placeholder">समाचार फोटो</div><h3>संगठन तथा सञ्चारसम्बन्धी गतिविधि</h3><small>मिति: यहाँ मिति राख्नुहोस्</small><p>कार्यक्रमको विवरण यहाँ राख्न सकिन्छ।</p></article>
-  <article><div class="placeholder">समाचार फोटो</div><h3>स्थानीय विषयमा छलफल तथा अन्तरक्रिया</h3><small>मिति: यहाँ मिति राख्नुहोस्</small><p>समाचार प्रकाशित गर्दा प्रमाणित तथ्य र स्रोत प्रयोग गर्नुहोस्।</p></article>
 </div>
+</header>
+
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+
+<img src="banner.png" alt="उज्यालो नेपाल पार्टी">
+
 </section>
 
-<section id="about" class="about">
-<h2 class="section-title">हाम्रो बारेमा</h2>
-<p>उज्यालो नेपाल पार्टी जुगल गाउँपालिका सञ्चार समिति स्थानीय गतिविधि, कार्यक्रम र आधिकारिक सञ्चार सामग्री व्यवस्थित रूपमा सार्वजनिक गर्ने स्थानीय पार्टी सञ्चार समिति हो।</p>
+
+<section class="welcome">
+
+<h1>उज्यालो नेपाल पार्टीमा स्वागत छ</h1>
+
+<p>
+समृद्ध, सुशासनयुक्त, पारदर्शी र उज्यालो नेपालको निर्माणका लागि
+जनताको सहभागिता र जिम्मेवार नेतृत्वसहित अघि बढ्ने हाम्रो अभियान।
+</p>
+
+<a href="#about" class="button">
+पार्टी परिचय हेर्नुहोस्
+</a>
+
 </section>
 
-<section id="press">
-<h2 class="section-title">प्रेस विज्ञप्ति</h2>
-<div class="notice"><b>प्रेस विज्ञप्ति</b><br>नयाँ विज्ञप्ति प्रकाशित भएपछि यसको शीर्षक, मिति र PDF/सम्बन्धित लिंक यहाँ राख्नुहोस्।</div>
-</section>
 
-<section id="committee">
-<h2 class="section-title">कार्यसमिति</h2>
-<div class="people">
-  <div class="person"><div class="avatar">फोटो</div><b>अध्यक्ष</b><span>नाम यहाँ</span></div>
-  <div class="person"><div class="avatar">फोटो</div><b>उपाध्यक्ष</b><span>नाम यहाँ</span></div>
-  <div class="person"><div class="avatar">फोटो</div><b>सचिव</b><span>नाम यहाँ</span></div>
-  <div class="person"><div class="avatar">फोटो</div><b>सह–सचिव</b><span>नाम यहाँ</span></div>
-  <div class="person"><div class="avatar">फोटो</div><b>कोषाध्यक्ष</b><span>नाम यहाँ</span></div>
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2 class="section-title">पार्टी परिचय</h2>
+
+<p style="text-align:center;max-width:850px;margin:auto;">
+
+उज्यालो नेपाल पार्टी राष्ट्र निर्माण, सुशासन,
+पारदर्शिता, जनसहभागिता तथा विकासलाई प्राथमिकतामा राख्दै
+नेपाललाई समृद्ध र उज्यालो भविष्यतर्फ अघि बढाउने
+राजनीतिक अभियान हो।
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>🇳🇵 राष्ट्र निर्माण</h3>
+<p>
+देशको आर्थिक तथा सामाजिक विकासलाई प्राथमिकता।
+</p>
 </div>
+
+<div class="card">
+<h3>⚖️ सुशासन</h3>
+<p>
+पारदर्शी, जवाफदेही र जनउत्तरदायी शासन।
+</p>
+</div>
+
+<div class="card">
+<h3>👥 जनसहभागिता</h3>
+<p>
+जनताको आवाज र सहभागितालाई प्राथमिकता।
+</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="events">
+
+<!-- AGENDA -->
+
+<section id="agenda" class="section agenda">
+
+<h2 class="section-title">हाम्रो एजेन्डा</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>शिक्षा</h3>
+<p>गुणस्तरीय तथा सबैको पहुँचमा शिक्षा।</p>
+</div>
+
+<div class="card">
+<h3>स्वास्थ्य</h3>
+<p>सर्वसुलभ र गुणस्तरीय स्वास्थ्य सेवा।</p>
+</div>
+
+<div class="card">
+<h3>रोजगारी</h3>
+<p>देशमै रोजगारी र उद्यमशीलताको वातावरण।</p>
+</div>
+
+<div class="card">
+<h3>कृषि</h3>
+<p>आधुनिक कृषि तथा किसानको सम्मान।</p>
+</div>
+
+<div class="card">
+<h3>पूर्वाधार</h3>
+<p>आधुनिक र दिगो पूर्वाधार विकास।</p>
+</div>
+
+<div class="card">
+<h3>युवा</h3>
+<p>युवा शक्ति र अवसरलाई राष्ट्र निर्माणमा जोड्ने।</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ACTIVITIES -->
+
+<section id="activities" class="section">
+
+<h2 class="section-title">पार्टीका गतिविधि</h2>
+
+<div class="activity">
+
+<h3>पार्टी गतिविधि</h3>
+
+<p>
+पार्टीका बैठक, अभियान, अन्तरक्रिया तथा सामाजिक
+कार्यक्रमहरूको जानकारी यहाँ प्रकाशित गरिनेछ।
+</p>
+
+</div>
+
+<div class="activity">
+
+<h3>स्थानीय गतिविधि</h3>
+
+<p>
+स्थानीय तहमा हुने कार्यक्रम तथा जनसम्पर्कसम्बन्धी
+जानकारी यहाँ राख्न सकिन्छ।
+</p>
+
+</div>
+
+</section>
+
+
+<!-- EVENTS -->
+
+<section id="events" class="section events">
+
 <h2 class="section-title">आगामी कार्यक्रम</h2>
-<div class="event"><b>कार्यक्रमको नाम</b><span>मिति: ______ &nbsp; | &nbsp; स्थान: ______</span></div>
-<div class="event"><b>अन्तरक्रिया / भेटघाट</b><span>मिति: ______ &nbsp; | &nbsp; स्थान: ______</span></div>
+
+<div class="event">
+<b>कार्यक्रमको नाम</b>
+<p>मिति तथा स्थान यहाँ राख्नुहोस्।</p>
+</div>
+
+<div class="event">
+<b>अन्तरक्रिया / भेटघाट</b>
+<p>कार्यक्रमको विस्तृत जानकारी यहाँ राख्नुहोस्।</p>
+</div>
+
 </section>
 
-<section id="gallery">
+
+<!-- GALLERY -->
+
+<section id="gallery" class="section">
+
 <h2 class="section-title">फोटो ग्यालरी</h2>
-<div class="gallery"><div>फोटो १</div><div>फोटो २</div><div>फोटो ३</div><div>फोटो ४</div></div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+फोटो १
+</div>
+
+<div class="gallery-box">
+फोटो २
+</div>
+
+<div class="gallery-box">
+फोटो ३
+</div>
+
+</div>
+
 </section>
+
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact">
-<h2 class="section-title">सम्पर्क</h2>
-<p><b>उज्यालो नेपाल पार्टी — जुगल गाउँपालिका सञ्चार समिति</b></p>
+
+<h2>सम्पर्क</h2>
+
+<p><b>उज्यालो नेपाल पार्टी</b></p>
+
 <p>जुगल गाउँपालिका, सिन्धुपाल्चोक, नेपाल</p>
-<p>फोन: यहाँ नम्बर राख्नुहोस् &nbsp; | &nbsp; इमेल: यहाँ इमेल राख्नुहोस्</p>
+
+<p>फोन: यहाँ नम्बर राख्नुहोस्</p>
+
+<p>Email: यहाँ Email राख्नुहोस्</p>
+
+<div class="social">
+
+<a href="#">Facebook</a>
+<a href="#">YouTube</a>
+<a href="#">TikTok</a>
+
+</div>
+
 </section>
-</main>
+
+
+<!-- FOOTER -->
 
 <footer>
-  <b>उज्यालो नेपाल पार्टी — जुगल गाउँपालिका सञ्चार समिति</b>
-  <p>यो वेबसाइट पार्टीको स्थानीय सञ्चार समितिको सूचना तथा सञ्चार प्रयोजनका लागि हो। यो जुगल गाउँपालिकाको सरकारी वेबसाइट होइन।</p>
-  <small>© 2026 उज्यालो नेपाल पार्टी — जुगल गाउँपालिका सञ्चार समिति</small>
+
+<b>उज्यालो नेपाल पार्टी</b>
+
+<p>
+समृद्ध नेपाल, उज्यालो भविष्य
+</p>
+
+<small>
+© 2026 उज्यालो नेपाल पार्टी — All Rights Reserved.
+</small>
+
 </footer>
 
-<script>
-function toggleMenu(){ document.getElementById('nav').classList.toggle('open'); }
-document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
-</script>
 </body>
 </html>
