@@ -6,15 +6,12 @@
 
 <title>उज्यालो नेपाल पार्टी – जुगल गाउँपालिका</title>
 
-<meta name="description"
-content="उज्यालो नेपाल पार्टी – जुगल गाउँपालिका, सिन्धुपाल्चोक">
-
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
 }
 
 html{
@@ -22,31 +19,28 @@ html{
 }
 
 body{
-    font-family:Arial,"Noto Sans Devanagari",sans-serif;
-    background:#f5f8fc;
+    background:#f5f7fb;
     color:#222;
     line-height:1.7;
 }
 
 /* TOP BAR */
-
 .topbar{
-    background:#0645ad;
+    background:#0756a8;
     color:white;
     text-align:center;
-    padding:9px;
-    font-weight:bold;
+    padding:8px;
+    font-size:15px;
 }
 
 /* HEADER */
-
 header{
     background:white;
+    padding:14px 5%;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:15px 6%;
-    box-shadow:0 2px 12px rgba(0,0,0,.12);
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
     position:sticky;
     top:0;
     z-index:1000;
@@ -55,807 +49,583 @@ header{
 .brand{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:12px;
 }
-
-/* BULB LOGO */
 
 .logo{
-    width:82px;
-    height:82px;
+    width:42px;
+    height:42px;
     border-radius:50%;
-    background:#0645ad;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:42px;
-    box-shadow:0 4px 12px rgba(0,0,0,.18);
+    background:#0756a8;
 }
 
-.brand h1{
-    color:#0645ad;
-    font-size:27px;
+.brand h2{
+    color:#0756a8;
+    font-size:20px;
 }
 
 .brand p{
-    color:#777;
-    font-size:16px;
+    font-size:12px;
+    color:#666;
 }
-
-/* MENU */
 
 nav{
     display:flex;
-    gap:22px;
+    gap:18px;
 }
 
 nav a{
     text-decoration:none;
     color:#222;
     font-weight:bold;
+    font-size:14px;
 }
 
 nav a:hover{
-    color:#0645ad;
-}
-
-.menu-btn{
-    display:none;
-    background:#0645ad;
-    color:white;
-    border:0;
-    padding:12px 18px;
-    font-size:25px;
-    border-radius:8px;
+    color:#0756a8;
 }
 
 /* BANNER */
-
-.hero{
+.banner{
     width:100%;
     background:#ddd;
 }
 
-.hero img{
+.banner img{
     width:100%;
     display:block;
-    height:auto;
+    max-height:520px;
+    object-fit:cover;
 }
 
-/* WELCOME */
-
-.welcome{
-    text-align:center;
+/* HERO */
+.hero{
     background:white;
-    padding:70px 20px;
+    text-align:center;
+    padding:45px 20px;
 }
 
-.welcome h2{
-    color:#0645ad;
-    font-size:40px;
-    margin-bottom:20px;
+.hero h1{
+    color:#0756a8;
+    font-size:32px;
+    margin-bottom:12px;
 }
 
-.welcome p{
-    max-width:850px;
+.hero p{
+    max-width:800px;
     margin:auto;
-    font-size:19px;
+    color:#555;
 }
 
 .button{
     display:inline-block;
-    margin-top:28px;
-    padding:13px 30px;
-    background:#0645ad;
+    margin-top:22px;
+    padding:11px 24px;
+    background:#0756a8;
     color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-/* SECTIONS */
-
-.section{
-    max-width:1150px;
-    margin:auto;
-    padding:70px 25px;
-}
-
-.section-title{
-    text-align:center;
-    color:#0645ad;
-    font-size:34px;
-    margin-bottom:35px;
-}
-
-.section-text{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
-    font-size:18px;
-}
-
-/* CARDS */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-    margin-top:35px;
-}
-
-.card{
-    background:white;
-    padding:28px;
-    border-radius:14px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.card h3{
-    color:#0645ad;
-    margin-bottom:8px;
-}
-
-/* COMMITTEE */
-
-.committee{
-    background:#eef5ff;
-    max-width:none;
-    padding-left:7%;
-    padding-right:7%;
-}
-
-.member-grid{
-    max-width:1150px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.member{
-    background:white;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.member-photo{
-    width:100%;
-    height:230px;
-    background:#e7eef7;
-    border-radius:12px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#55708f;
-    font-size:22px;
-    margin-bottom:18px;
-    overflow:hidden;
-}
-
-.member-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.member h3{
-    color:#0645ad;
-    font-size:23px;
-}
-
-.member p{
-    color:#555;
-}
-
-/* AGENDA */
-
-.agenda{
-    background:white;
-}
-
-/* NEWS */
-
-.news-box{
-    background:white;
-    max-width:900px;
-    margin:20px auto;
-    padding:25px;
-    border-left:6px solid #0645ad;
-    border-radius:8px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.news-box h3{
-    color:#0645ad;
-}
-
-/* EVENTS */
-
-.events{
-    background:#eef5ff;
-    max-width:none;
-}
-
-.event-list{
-    max-width:900px;
-    margin:auto;
-}
-
-.event{
-    background:white;
-    margin:15px 0;
-    padding:22px;
-    border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,.07);
-}
-
-.event b{
-    color:#0645ad;
-}
-
-/* GALLERY */
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.gallery-box{
-    height:220px;
-    background:#e7eef7;
-    border-radius:12px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#55708f;
-    overflow:hidden;
-}
-
-.gallery-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-/* CONTACT */
-
-.contact{
-    background:#063b91;
-    color:white;
-    text-align:center;
-    padding:70px 20px;
-}
-
-.contact h2{
-    font-size:34px;
-    margin-bottom:25px;
-}
-
-.contact p{
-    margin:8px;
-}
-
-.social{
-    margin-top:25px;
-}
-
-.social a{
-    display:inline-block;
-    margin:7px;
-    padding:10px 20px;
-    background:white;
-    color:#0645ad;
     text-decoration:none;
     border-radius:6px;
     font-weight:bold;
 }
 
-/* FOOTER */
-
-footer{
-    background:#061d45;
-    color:white;
-    text-align:center;
-    padding:30px 15px;
+/* SECTION */
+.section{
+    padding:55px 5%;
+    max-width:1200px;
+    margin:auto;
 }
 
-footer h3{
-    font-size:23px;
-    margin-bottom:5px;
+.section h2{
+    text-align:center;
+    color:#0756a8;
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+.section-intro{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 30px;
+    color:#666;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#0756a8;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#555;
+}
+
+/* NEWS */
+.news{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.news-box{
+    background:white;
+    padding:25px;
+    border-left:5px solid #0756a8;
+    border-radius:8px;
+    box-shadow:0 3px 12px rgba(0,0,0,.07);
+}
+
+.news-box small{
+    color:#777;
+}
+
+/* COMMITTEE */
+.committee{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.member{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.member-photo{
+    width:120px;
+    height:120px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#e8eef7;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#777;
+    font-size:14px;
+}
+
+.member h3{
+    color:#0756a8;
+    font-size:18px;
+}
+
+.member p{
+    color:#666;
+}
+
+/* EVENTS */
+.event{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+
+.event h3{
+    color:#0756a8;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.gallery-box{
+    height:200px;
+    background:#e9edf3;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#777;
+}
+
+/* CONTACT */
+.contact{
+    background:#0756a8;
+    color:white;
+    padding:55px 5%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:7px;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    display:inline-block;
+    margin:5px;
+    padding:8px 15px;
+    background:white;
+    color:#0756a8;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+    background:#07396d;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    font-size:14px;
 }
 
 /* MOBILE */
-
-@media(max-width:768px){
+@media(max-width:800px){
 
     header{
-        padding:12px 5%;
+        padding:12px 4%;
     }
 
-    .logo{
-        width:65px;
-        height:65px;
-        font-size:34px;
-    }
-
-    .brand h1{
-        font-size:20px;
-    }
-
-    .brand p{
-        font-size:13px;
-    }
-
-    .menu-btn{
-        display:block;
+    .brand h2{
+        font-size:16px;
     }
 
     nav{
         display:none;
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:white;
-        flex-direction:column;
-        padding:20px;
-        box-shadow:0 5px 15px rgba(0,0,0,.1);
     }
 
-    nav.show{
-        display:flex;
-    }
-
-    .welcome h2{
-        font-size:29px;
-    }
-
-    .section-title{
-        font-size:28px;
+    .hero h1{
+        font-size:25px;
     }
 
     .cards{
         grid-template-columns:1fr;
     }
 
-    .member-grid{
+    .news{
         grid-template-columns:1fr;
+    }
+
+    .committee{
+        grid-template-columns:repeat(2,1fr);
     }
 
     .gallery{
         grid-template-columns:1fr;
     }
 
-    .hero img{
-        width:100%;
+    .member-photo{
+        width:95px;
+        height:95px;
     }
 }
 
+@media(max-width:450px){
+
+    .committee{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:30px 15px;
+    }
+
+    .section{
+        padding:40px 15px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-
+<!-- TOP -->
 <div class="topbar">
 🇳🇵 उज्यालो नेपाल पार्टी – जुगल गाउँपालिका
 </div>
 
-
 <!-- HEADER -->
-
 <header>
 
-<div class="brand">
+    <div class="brand">
 
-<div class="logo">💡</div>
+        <!-- Logo खाली -->
+        <div class="logo"></div>
 
-<div>
-<h1>उज्यालो नेपाल पार्टी</h1>
-<p>जुगल गाउँपालिका, सिन्धुपाल्चोक</p>
-</div>
+        <div>
+            <h2>उज्यालो नेपाल पार्टी</h2>
+            <p>जुगल गाउँपालिका, सिन्धुपाल्चोक</p>
+        </div>
 
-</div>
+    </div>
 
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-<nav id="nav">
-
-<a href="#home">गृहपृष्ठ</a>
-<a href="#about">पार्टी परिचय</a>
-<a href="#agenda">एजेन्डा</a>
-<a href="#committee">कार्यसमिति</a>
-<a href="#news">समाचार</a>
-<a href="#events">कार्यक्रम</a>
-<a href="#gallery">फोटो ग्यालरी</a>
-<a href="#contact">सम्पर्क</a>
-
-</nav>
+    <nav>
+        <a href="#home">गृहपृष्ठ</a>
+        <a href="#about">पार्टी परिचय</a>
+        <a href="#committee">कार्यसमिति</a>
+        <a href="#news">सूचना</a>
+        <a href="#events">कार्यक्रम</a>
+        <a href="#gallery">ग्यालरी</a>
+        <a href="#contact">सम्पर्क</a>
+    </nav>
 
 </header>
 
 
 <!-- BANNER -->
-
-<section id="home" class="hero">
-
-<img src="banner.png" alt="उज्यालो नेपाल पार्टी – जुगल गाउँपालिका">
-
+<section class="banner">
+    <img src="banner.png" alt="उज्यालो नेपाल पार्टी">
 </section>
 
 
-<!-- WELCOME -->
+<!-- HOME -->
+<section id="home" class="hero">
 
-<section class="welcome">
+    <h1>उज्यालो नेपाल पार्टी – जुगल गाउँपालिका</h1>
 
-<h2>उज्यालो नेपाल पार्टी – जुगल गाउँपालिका</h2>
+    <p>
+        जुगल गाउँपालिकामा पार्टीका गतिविधि, सूचना,
+        कार्यक्रम, कार्यसमिति तथा सार्वजनिक जानकारी
+        एकै ठाउँमा प्रस्तुत गर्ने वेबपेज।
+    </p>
 
-<p>
-जुगल गाउँपालिकामा पार्टीका गतिविधि, सूचना,
-कार्यक्रम, कार्यसमिति तथा सार्वजनिक जानकारी
-एकै ठाउँमा प्रस्तुत गर्ने आधिकारिक वेबपेज।
-</p>
-
-<a href="#about" class="button">पार्टी परिचय</a>
+    <a href="#about" class="button">
+        पार्टी परिचय
+    </a>
 
 </section>
 
 
 <!-- ABOUT -->
-
 <section id="about" class="section">
 
-<h2 class="section-title">पार्टी परिचय</h2>
+    <h2>पार्टी परिचय</h2>
 
-<p class="section-text">
-उज्यालो नेपाल पार्टी – जुगल गाउँपालिका
-सम्बन्धी संगठनात्मक जानकारी, कार्यक्रम,
-गतिविधि तथा सार्वजनिक सूचनाहरू यहाँ राख्न सकिन्छ।
-</p>
+    <p class="section-intro">
+        यहाँ उज्यालो नेपाल पार्टीको परिचय,
+        उद्देश्य, संगठन तथा स्थानीय तहका गतिविधिबारे
+        जानकारी राख्न सकिन्छ।
+    </p>
 
-<div class="cards">
+    <div class="cards">
 
-<div class="card">
-<h3>🇳🇵 संगठन</h3>
-<p>स्थानीय संगठन तथा जिम्मेवारीसम्बन्धी जानकारी यहाँ राख्नुहोस्।</p>
-</div>
+        <div class="card">
+            <h3>पार्टीको परिचय</h3>
+            <p>
+                यहाँ पार्टी सम्बन्धी आधिकारिक परिचय
+                र आवश्यक जानकारी राख्नुहोस्।
+            </p>
+        </div>
 
-<div class="card">
-<h3>📢 सूचना</h3>
-<p>महत्वपूर्ण सूचना तथा सार्वजनिक जानकारी यहाँ प्रकाशित गर्नुहोस्।</p>
-</div>
+        <div class="card">
+            <h3>उद्देश्य</h3>
+            <p>
+                यहाँ पार्टीका उद्देश्य तथा प्राथमिकताहरू
+                उल्लेख गर्न सकिन्छ।
+            </p>
+        </div>
 
-<div class="card">
-<h3>👥 जनसम्पर्क</h3>
-<p>स्थानीय नागरिकसँग सम्बन्धित सम्पर्क तथा कार्यक्रमको जानकारी।</p>
-</div>
+        <div class="card">
+            <h3>जुगल गाउँपालिका</h3>
+            <p>
+                जुगल गाउँपालिकाका स्थानीय गतिविधि,
+                सूचना तथा कार्यक्रमहरू यहाँ राख्न सकिन्छ।
+            </p>
+        </div>
 
-</div>
-
-</section>
-
-
-<!-- AGENDA -->
-
-<section id="agenda" class="section agenda">
-
-<h2 class="section-title">एजेन्डा तथा प्राथमिकता</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>शिक्षा</h3>
-<p>स्थानीय शिक्षा सम्बन्धी नीति तथा प्राथमिकता यहाँ राख्नुहोस्।</p>
-</div>
-
-<div class="card">
-<h3>स्वास्थ्य</h3>
-<p>स्वास्थ्य सम्बन्धी योजना तथा जानकारी यहाँ राख्नुहोस्।</p>
-</div>
-
-<div class="card">
-<h3>रोजगारी</h3>
-<p>रोजगारी तथा उद्यमशीलता सम्बन्धी विवरण यहाँ राख्नुहोस्।</p>
-</div>
-
-<div class="card">
-<h3>कृषि</h3>
-<p>कृषि तथा किसान सम्बन्धी प्राथमिकता यहाँ राख्नुहोस्।</p>
-</div>
-
-<div class="card">
-<h3>पूर्वाधार</h3>
-<p>स्थानीय पूर्वाधार तथा विकास योजनाको विवरण यहाँ राख्नुहोस्।</p>
-</div>
-
-<div class="card">
-<h3>युवा</h3>
-<p>युवा तथा सामाजिक कार्यक्रमसम्बन्धी विवरण यहाँ राख्नुहोस्।</p>
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- COMMITTEE -->
-
-<section id="committee" class="section committee">
-
-<h2 class="section-title">कार्यसमिति</h2>
-
-<div class="member-grid">
-
-
-<!-- अध्यक्ष -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>अध्यक्ष</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- उपाध्यक्ष -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>उपाध्यक्ष</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- सचिव -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>सचिव</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- सह-सचिव -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>सह-सचिव</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- कोषाध्यक्ष -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>कोषाध्यक्ष</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- सदस्य -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>सदस्य</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- सदस्य २ -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>सदस्य</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- सदस्य ३ -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>सदस्य</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-
-<!-- सदस्य ४ -->
-
-<div class="member">
-
-<div class="member-photo">
-फोटो
-</div>
-
-<h3>सदस्य</h3>
-
-<p>नाम यहाँ</p>
-
-</div>
-
-</div>
+<section id="committee" class="section">
+
+    <h2>कार्यसमिति</h2>
+
+    <p class="section-intro">
+        कार्यसमितिका पदाधिकारी तथा सदस्यहरूको
+        विवरण यहाँ राख्न सकिन्छ।
+    </p>
+
+    <div class="committee">
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>अध्यक्ष</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>उपाध्यक्ष</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>सचिव</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>सह–सचिव</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>कोषाध्यक्ष</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>सदस्य</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>सदस्य</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+        <div class="member">
+            <div class="member-photo">फोटो</div>
+            <h3>सदस्य</h3>
+            <p>नाम यहाँ</p>
+        </div>
+
+    </div>
 
 </section>
 
 
 <!-- NEWS -->
-
 <section id="news" class="section">
 
-<h2 class="section-title">समाचार तथा गतिविधि</h2>
+    <h2>समाचार तथा सूचना</h2>
 
-<div class="news-box">
+    <div class="news">
 
-<h3>नयाँ सूचना</h3>
+        <div class="news-box">
+            <small>नयाँ सूचना</small>
+            <h3>पार्टी सम्बन्धी सूचना</h3>
+            <p>
+                नयाँ सूचना, बैठक तथा सार्वजनिक जानकारी
+                यहाँ प्रकाशित गर्न सकिन्छ।
+            </p>
+        </div>
 
-<p>
-यहाँ नयाँ सूचना तथा घोषणाहरू राख्न सकिन्छ।
-</p>
+        <div class="news-box">
+            <small>गतिविधि</small>
+            <h3>स्थानीय गतिविधिहरू</h3>
+            <p>
+                जुगल गाउँपालिकामा भएका गतिविधिहरूको
+                विवरण यहाँ राख्न सकिन्छ।
+            </p>
+        </div>
 
-</div>
-
-<div class="news-box">
-
-<h3>पार्टी गतिविधि</h3>
-
-<p>
-यहाँ बैठक, भेटघाट, अभियान तथा अन्य गतिविधिको विवरण राख्न सकिन्छ।
-</p>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- EVENTS -->
+<section id="events" class="section">
 
-<section id="events" class="section events">
+    <h2>कार्यक्रमहरू</h2>
 
-<h2 class="section-title">आगामी कार्यक्रम</h2>
+    <div class="event">
+        <h3>कार्यक्रमको नाम यहाँ</h3>
+        <p>मिति: यहाँ मिति राख्नुहोस्</p>
+        <p>स्थान: यहाँ स्थान राख्नुहोस्</p>
+    </div>
 
-<div class="event-list">
-
-<div class="event">
-<b>कार्यक्रमको नाम</b>
-<p>मिति: यहाँ राख्नुहोस्</p>
-<p>स्थान: यहाँ राख्नुहोस्</p>
-</div>
-
-<div class="event">
-<b>अन्तरक्रिया / भेटघाट</b>
-<p>मिति तथा स्थानको विवरण यहाँ राख्नुहोस्।</p>
-</div>
-
-</div>
+    <div class="event">
+        <h3>बैठक / कार्यक्रम</h3>
+        <p>मिति: यहाँ मिति राख्नुहोस्</p>
+        <p>स्थान: यहाँ स्थान राख्नुहोस्</p>
+    </div>
 
 </section>
 
 
 <!-- GALLERY -->
-
 <section id="gallery" class="section">
 
-<h2 class="section-title">फोटो ग्यालरी</h2>
+    <h2>फोटो ग्यालरी</h2>
 
-<div class="gallery">
+    <div class="gallery">
 
-<div class="gallery-box">फोटो १</div>
+        <div class="gallery-box">फोटो यहाँ</div>
+        <div class="gallery-box">फोटो यहाँ</div>
+        <div class="gallery-box">फोटो यहाँ</div>
+        <div class="gallery-box">फोटो यहाँ</div>
+        <div class="gallery-box">फोटो यहाँ</div>
+        <div class="gallery-box">फोटो यहाँ</div>
 
-<div class="gallery-box">फोटो २</div>
-
-<div class="gallery-box">फोटो ३</div>
-
-<div class="gallery-box">फोटो ४</div>
-
-<div class="gallery-box">फोटो ५</div>
-
-<div class="gallery-box">फोटो ६</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- CONTACT -->
-
 <section id="contact" class="contact">
 
-<h2>सम्पर्क</h2>
+    <h2>सम्पर्क</h2>
 
-<p><b>उज्यालो नेपाल पार्टी – जुगल गाउँपालिका</b></p>
+    <p>📍 ठेगाना: जुगल गाउँपालिका, सिन्धुपाल्चोक</p>
+    <p>📞 फोन: यहाँ फोन नम्बर राख्नुहोस्</p>
+    <p>✉️ Email: यहाँ Email राख्नुहोस्</p>
 
-<p>📍 जुगल गाउँपालिका, सिन्धुपाल्चोक, नेपाल</p>
-
-<p>📞 फोन: यहाँ नम्बर राख्नुहोस्</p>
-
-<p>✉️ Email: यहाँ Email राख्नुहोस्</p>
-
-<div class="social">
-
-<a href="#">Facebook</a>
-<a href="#">YouTube</a>
-<a href="#">TikTok</a>
-
-</div>
+    <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+    </div>
 
 </section>
 
 
 <!-- FOOTER -->
-
 <footer>
 
-<h3>💡 उज्यालो नेपाल पार्टी – जुगल गाउँपालिका</h3>
+    <h3>उज्यालो नेपाल पार्टी – जुगल गाउँपालिका</h3>
 
-<p>जुगल गाउँपालिका, सिन्धुपाल्चोक</p>
+    <p>
+        सार्वजनिक जानकारी तथा स्थानीय गतिविधि
+    </p>
 
-<p>© 2026 उज्यालो नेपाल पार्टी – जुगल गाउँपालिका</p>
+    <p>
+        © 2026 उज्यालो नेपाल पार्टी
+    </p>
 
 </footer>
 
-
-<script>
-
-function toggleMenu(){
-
-document.getElementById("nav").classList.toggle("show");
-
-}
-
-</script>
-
 </body>
-</html>
+            </html>
