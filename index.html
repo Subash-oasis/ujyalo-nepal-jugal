@@ -472,6 +472,146 @@ footer p{
 </head>
 
 <body>
+    <!-- NEWS POPUP START -->
+
+<style>
+.news-popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    z-index:99999;
+}
+
+.news-card{
+    width:100%;
+    max-width:430px;
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 10px 40px rgba(0,0,0,.3);
+}
+
+.news-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
+}
+
+.close-news{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:38px;
+    height:38px;
+    border:0;
+    border-radius:50%;
+    background:rgba(0,0,0,.7);
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.news-content{
+    padding:22px;
+    text-align:center;
+}
+
+.new-label{
+    display:inline-block;
+    background:#0756a8;
+    color:#fff;
+    padding:5px 13px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.news-content h2{
+    color:#0756a8;
+    margin:10px 0;
+}
+
+.news-content p{
+    color:#666;
+    line-height:1.6;
+}
+
+.news-buttons{
+    margin-top:18px;
+}
+
+.news-buttons a,
+.news-buttons button{
+    display:inline-block;
+    padding:10px 20px;
+    margin:4px;
+    border:0;
+    border-radius:7px;
+    text-decoration:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.news-buttons a{
+    background:#0756a8;
+    color:#fff;
+}
+
+.news-buttons button{
+    background:#ddd;
+    color:#222;
+}
+</style>
+
+<div id="newsPopup" class="news-popup">
+
+    <div class="news-card">
+
+        <button class="close-news" onclick="skipNews()">×</button>
+
+        <img src="news.jpg" alt="नयाँ सूचना">
+
+        <div class="news-content">
+
+            <span class="new-label">नयाँ सूचना</span>
+
+            <h2>नयाँ समाचार तथा सूचना</h2>
+
+            <p>
+                यहाँ नयाँ समाचार वा महत्वपूर्ण
+                सार्वजनिक सूचना राख्नुहोस्।
+            </p>
+
+            <div class="news-buttons">
+
+                <a href="#news" onclick="skipNews()">
+                    हेर्नुहोस्
+                </a>
+
+                <button onclick="skipNews()">
+                    Skip
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function skipNews(){
+    document.getElementById("newsPopup").style.display = "none";
+}
+</script>
+
+<!-- NEWS POPUP END -->
 
 <!-- TOP -->
 <div class="topbar">
